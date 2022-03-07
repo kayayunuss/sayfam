@@ -1,0 +1,46 @@
+ 
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Örnekleri</title>
+        <style>
+            body{
+                background: #2eacccd8;
+            }
+            #yazi{
+                margin:80px auto;
+                padding:20px;
+                width: 300px;
+                font-size:25px;
+                background: #34495e;
+                color:#edecf1;
+                border: solid 3px #16a085;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="yazi">MERHABA HOŞ GELDİNİZ </div>  
+    
+    <script>
+            /*KayanYazi fonksiyonunu 
+        ekleyip daha esnek kullanılmasını sağlıyoruz.*/
+        
+    KayanYazi=function(nesne,zaman){
+         let yaziNesne=nesne;
+        
+        setInterval(function(){
+            let yazi  = yaziNesne.innerHTML;
+            let harf  = yazi.substring(0,1);
+            let kalan = yazi.substring(1,yazi.length);
+            kalan=kalan+harf
+            yaziNesne.innerHTML=kalan;
+        }, zaman);
+    }
+        
+    var nesne=document.getElementById("yazi"); 
+    KayanYazi(nesne,750);  
+        </script>
+    </body>
+</html>
+ 

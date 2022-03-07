@@ -46,6 +46,7 @@ p{
 }
 
 .header{
+    
     background-image: url(./111.jpg);
     background-position: center;
     background-size: cover;
@@ -58,7 +59,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 50px 0;
+    
 }
 .header-logo{
     font-size: 16px;
@@ -102,7 +104,7 @@ a{
 .btn-coffe{
     display: block;
     background-color: rgba(53, 145, 0, 0.699);
-    color: rgb(255, 255, 255);
+    color: rgb(226, 2, 2);
     padding: 10px 15px;
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
@@ -122,13 +124,13 @@ h1{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(180, 85, 21);
+    background-color: rgb(204, 93, 19);
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: .7s;
 }
 
 .btn-coffe:hover::after{
@@ -199,12 +201,22 @@ h4{
 .about-text p{
     font-size: 15px;
     text-align: center;
-    color: rgb(62, 45, 110);
+    color: rgb(0, 0, 0);
 
 }
 /* PORTFOLIO */
 
 .portfolio{
+    
+    
+        background-image: url(./111.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    
+    
+    
     display: flex;
     flex-wrap: wrap;
 
@@ -410,4 +422,34 @@ h4{
         
     }
     
+}
+
+#box {
+    max-width: 300px;
+    position: relative;
+}
+ 
+#box .fa-search {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 10px;
+    color:rgb(245, 131, 0);
+}
+ 
+#search {
+    width: 80px;
+    box-sizing: border-box;
+    border: 2px solid rgb(253, 0, 0);
+    border-radius: 4px;
+    font-size:10px;
+    padding: 8px 15px 8px 25px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+ 
+#search:focus {
+    width: 100%;
 }
